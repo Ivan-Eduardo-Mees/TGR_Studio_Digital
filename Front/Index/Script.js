@@ -25,3 +25,4 @@ $(document).ready(function(){
         head1.style.fontWeight = "bold"
     }
 })
+
