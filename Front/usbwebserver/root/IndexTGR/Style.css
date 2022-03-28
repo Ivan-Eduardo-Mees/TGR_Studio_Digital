@@ -3,9 +3,9 @@
   }
 
 .alignMidle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     
 }
 .imgHeader{
@@ -25,11 +25,16 @@
 
 .labelHeader{
     width: calc(100% + 15px);
-    padding: 4px;
+    padding: 3px;
     font-size: 14pt;
     cursor: pointer;
     text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #727070;
+}
 
+.head1{
+    color: black;
 }
 
 .labelHeader:hover{
@@ -39,8 +44,9 @@
 .responseNavbar{
     padding-top: 15px;
 }
-
-
+.col-md-6{
+    padding: 0 !important;
+}
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   width: 70%;
@@ -51,17 +57,25 @@
     width: 1vw !important;
     height: 1vw !important;
     border-radius: 50%;
+    
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: black;
+}
+
+.carousel-indicators [data-bs-target] {
+    opacity: 1;
 }
 
 .carousel-control-next-icon {
     width: 100%;
     max-width: 70px;
     height: 100%;
-       
+
     background-image: url("IMG/Next.png");
     object-fit: contain;
-
-
 }
 .carousel-control-next {
     opacity: 1 !important;
@@ -87,15 +101,12 @@
     opacity: 1 !important;
 }
 
+
 .boxPrev{
     width: 24%;
     height: 13%;
     background-color: white;
     margin-right: 47%;
-}
-
-.col-md-6{
-    padding: 0px !important;
 }
 
 .imgQuemSomos{
@@ -116,12 +127,9 @@
 
 }
 
-
-
-
 .quemSomosTitulo{
     font-family: 'Lato', sans-serif;
-    font-size: 30pt;
+    font-size: 25pt;
 }
 
 .quemSomosTexto{
@@ -232,19 +240,20 @@
 .noticiaTituloHeader{
     font-family: 'Lato', sans-serif;
     font-size: 18pt;
+    position: absolute;
+    bottom: 0;
 
+    margin-bottom: 0;
 }
 
 .imgNoticias{
     width: 100%;
 }
 
-.noticiaHeader{
-    padding-bottom: 0 !important;
-}
 
 .noticiasImagens{
     margin-top: 0 !important;
+    margin-bottom: 0 !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
@@ -261,12 +270,59 @@
     font-size: 10pt;
 }
 
+
 .noticiasText{
     color: white;
     font-family: 'Lato', sans-serif;
     font-size: 12pt;
 }
 
+.btn-floating i {
+    display: unset;
+    width: 0 !important;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.btn-floating {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0;
+    overflow: unset !important;
+    vertical-align: none !important;
+    cursor: pointer;
+    border-radius: 0;
+    -webkit-box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+    -webkit-transition: all .2s ease-in-out;
+    transition: none !important;
+    width: 47px;
+    height: 30px;
+}
+
+.card-body {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 0 !important;
+    background-color: black;
+}
+
+.card .card-body .card-text {
+    font-size: .9rem;
+    font-weight: 400;
+    color: white;
+}
+
+
+
+
+.iframeNoticias{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
 .noticiaConteudo{
     background-color: black;
     color: white;
@@ -305,6 +361,7 @@
     padding-top: 1% ;
     padding-bottom: 1%;
 }
+
 
 @media only screen and (max-width: 768px)
 {/*768*/
@@ -357,4 +414,15 @@
         margin-right: auto;
         width: 50%;
     }
+
+    .noticiaTituloHeader{
+        font-family: 'Lato', sans-serif;
+        font-size: 18pt;
+        position: unset !important;
+        bottom: unset !important;
+        
+        text-align: center;
+        margin-bottom: 0;
+    }
+
 }
